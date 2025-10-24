@@ -1,0 +1,63 @@
+body {
+    background-color: #D972FF; 
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      margin: 0;
+      font-family: "Georgia", serif;
+      color: #AAFAC8;
+    }
+
+    .contenido {
+      padding: 20px;
+    }
+
+    .caja {
+      background-color: #FFE6E8; /* Caja blanca */
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .caja h2 {
+      color: #592E83;
+      font-family: "Verdana", sans-serif;
+    }
+
+    .bio {
+      background-color: #FFE6E8; /* Verde suave */
+      padding: 15px;
+      border-left: 5px solid #592E83;
+      font-family: "Tahoma", sans-serif;
+    }
+
+    footer {
+      background-color: #655560;
+      color: #FFE6E8;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+}
+      
+      .texto {
+        color: #540D6E;
+      
+    }
+ul {
+  list-style: none;   /* quita los puntos */
+  padding: 0;         /* elimina el sangrado a la izquierda */
+}
+
+
+    img {
+      display: block;
+      max-width: 19%;
+      height: auto;
+      border-radius: 10px; /* Bordes suaves para que combine */
+      margin: 20px auto;   /* Centrar la imagen */
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Sombra ligera */
+    }
