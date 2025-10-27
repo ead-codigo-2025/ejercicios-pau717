@@ -228,3 +228,158 @@ nav a.active {
     gap: 10px;
   }
 }
+
+/* ---------- SECCIÓN HOBBYS ---------- */
+.hobby-section {
+    max-width: 1100px;
+    margin: 100px auto;
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 1s ease;
+}
+
+.hobby-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hobby-section p {
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.7;
+}
+
+/* ---------- CUADRÍCULA DE HOBBIES ---------- */
+.hobby-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.hobby-card {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hobby-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+.hobby-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.hobby-card h3 {
+    font-size: 1.3em;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.hobby-card p {
+    color: #555;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* ---------- GALERÍA DE IMÁGENES ---------- */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* ---------- LIGHTBOX (para ampliar imágenes) ---------- */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255,255,255,0.2);
+}
+
+.close-btn {
+    position: absolute;
+    top: 25px;
+    right: 40px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.close-btn:hover {
+    color: #f57c00;
+}
+
+/* ---------- ANIMACIÓN GENERAL ---------- */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ---------- SECCIÓN DE TALLERES ---------- */
+.talleres-section {
+    max-width: 1100px;
+    margin: 80px auto;
+    padding: 20px;
+    text-align: left;
+}
+
+.talleres-section h2 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+    color: var(--fucsia);
+}
+
+.talleres-section p {
+    font-size: 1.1em;
+    margin-bottom: 25px;
+    color: #555;
+}
+
+.talleres-list {
+    list-style-type: disc; /* o circle, square según prefieras */
+    padding-left: 30px;
+}
+
+.talleres-list li {
+    margin-bottom: 12px;
+    font-size: 1.05em;
+    line-height: 1.6;
+}
