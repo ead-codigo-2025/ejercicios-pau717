@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbys - Paula Retamal</title>
+    <link rel="stylesheet" href="style.2da.css">
+</head>
+<body>
+
+    <!-- NAVEGACIÓN -->
+    <header class="container">
+    <div class="logo">pauLA</div>
+    <nav>
+      <a href="inicio2.html" class="nav-link">Inicio</a>
+      <a href="sobremi.html" class="nav-link">Sobre mí</a>
+      <a href="proyectos.html" class="nav-link">Proyectos</a>
+      <a href="hobbys.html" class="nav-link active">Hobbys</a>
+      <a href="contacto.html" class="nav-link">Contacto</a>
+    </nav>
+  </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <section class="hobby-section">
+        <h1>Mis Hobbys</h1>
+        <p>Fuera del ámbito académico, encuentro inspiración en distintas formas de expresión y conexión con el entorno. Estas actividades alimentan mi creatividad y mantienen el equilibrio entre trabajo y bienestar.</p>
+
+        <div class="hobby-grid">
+            <div class="hobby-card">
+                <img src="imagenes/dibujo.jpg" alt="Dibujo">
+                <h3>Dibujo y pintura</h3>
+                <p>Exploro el color, la forma y la textura como medios de reflexión y expresión libre. De aquí nacen muchas de mis ideas creativas.</p>
+            </div>
+
+            <div class="hobby-card">
+                <img src="imagenes/naturaleza.jpg" alt="Naturaleza">
+                <h3>Conexión con la naturaleza</h3>
+                <p>Observar la luz, los colores y los ritmos naturales me inspira a pensar el diseño desde lo sensorial y lo sostenible.</p>
+            </div>
+
+            <div class="hobby-card">
+                <img src="imagenes/fotografia.jpg" alt="Fotografía">
+                <h3>Fotografía</h3>
+                <p>Capturo atmósferas y texturas que luego se transforman en referentes para mis proyectos visuales y de interacción.</p>
+            </div>
+
+            <div class="hobby-card">
+                <img src="imagenes/musica.jpg" alt="Música">
+                <h3>Música</h3>
+                <p>La música acompaña mis procesos creativos, marcando el ritmo de mis pensamientos y estados de ánimo.</p>
+            </div>
+        </div>
+
+        <h2>Galería</h2>
+        <div class="gallery">
+            <img src="imagenes/galeria1.jpg" alt="Galería 1" onclick="openLightbox(this)">
+            <img src="imagenes/galeria2.jpg" alt="Galería 2" onclick="openLightbox(this)">
+            <img src="imagenes/galeria3.jpg" alt="Galería 3" onclick="openLightbox(this)">
+            <img src="imagenes/galeria4.jpg" alt="Galería 4" onclick="openLightbox(this)">
+            <img src="imagenes/galeria5.jpg" alt="Galería 5" onclick="openLightbox(this)">
+        </div>
+    </section>
+
+    <!-- LIGHTBOX -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close-btn" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img" src="">
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Paula Retamal Ardiles</p>
+    </footer>
