@@ -1,0 +1,230 @@
+/* ================================
+   VARIABLES Y BASE
+=================================== */
+:root {
+  --celeste: #A7D8F5;
+  --fucsia: #F25C9C;
+  --morado: #9D69C9;
+  --amarillo: #FFD36B;
+  --muted: #F5F5F5;
+  --text: #222;
+}
+
+body {
+  margin: 0;
+  font-family: 'Fira Sans', sans-serif;
+  color: var(--text);
+  background: linear-gradient(180deg, var(--muted), #fff 40%);
+  scroll-behavior: smooth;
+}
+
+/* ================================
+   IMÁGENES Y TEXTO
+=================================== */
+img {
+  width: 100%;   /* ocupa todo el ancho del contenedor */
+  height: auto;  /* mantiene la proporción original */
+  border-radius: 8px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.texto {
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* ================================
+   ESTRUCTURA
+=================================== */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 28px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, var(--fucsia), var(--morado));
+  color: white;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: rotate(6deg) scale(1.05);
+}
+
+/* ================================
+   NAVEGACIÓN
+=================================== */
+nav a {
+  text-decoration: none;
+  color: var(--text);
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-weight: 500;
+  transition: background 0.3s, color 0.3s, transform 0.2s;
+}
+
+/* Efecto hover */
+nav a:hover {
+  background: rgba(0, 0, 0, 0.05);
+  transform: translateY(-2px);
+}
+
+/* Cuando se hace clic o se mantiene presionado */
+nav a:active {
+  background: var(--amarillo);
+  color: var(--text);
+  transform: scale(0.97);
+}
+
+/* Enlace activo (página actual) */
+nav a.active {
+  background: linear-gradient(90deg, var(--celeste), var(--fucsia));
+  color: white;
+}
+
+/* ================================
+   HERO Y CONTENEDORES
+=================================== */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 28px;
+  align-items: center;
+  animation: fadeIn 1s ease;
+}
+
+.hero-card {
+  background: rgba(255,255,255,0.85);
+  padding: 28px;
+  border-radius: 18px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+/* ================================
+   BOTONES
+=================================== */
+.btn {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, var(--celeste), var(--fucsia));
+  color: white;
+  }
+
+.btn-ghost {
+  border: 1px solid #ccc;
+  color: #333;
+}
+
+/* Animación de botones */
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+
+}
+
+/* ================================
+   GALERÍA
+=================================== */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 12px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* ================================
+   HABILIDADES Y CONTACTO
+=================================== */
+.skill {
+  background: var(--muted);
+  padding: 6px 12px;
+  border-radius: 999px;
+  margin: 4px;
+  display: inline-block;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.skill:hover {
+  background: var(--celeste);
+  color: white;
+}
+
+.contact-card {
+  background: linear-gradient(90deg, var(--morado), var(--fucsia));
+  color: white;
+  padding: 18px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+/* ================================
+   ANIMACIONES KEYFRAMES
+=================================== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ================================
+   RESPONSIVE DESIGN
+=================================== */
+@media (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
