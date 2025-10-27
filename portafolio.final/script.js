@@ -20,5 +20,3 @@ function mostrarAlDesplazar() {
   });
 }
 
-window.addEventListener('scroll', mostrarAlDesplazar);
-window.addEventListener('load', mostrarAlDesplazar);
