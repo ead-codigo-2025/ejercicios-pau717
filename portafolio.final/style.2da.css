@@ -28,6 +28,10 @@ img {
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
+.inicio {
+   width: 45%;  
+  height: auto;
+}
 img:hover {
   transform: scale(1.03);
   box-shadow: 0 8px 16px rgba(0,0,0,0.15);
@@ -73,12 +77,13 @@ header {
    NAVEGACIÓN
 =================================== */
 nav a {
+  background: var(--celeste);
   text-decoration: none;
   color: var(--text);
   padding: 8px 14px;
   border-radius: 10px;
   font-weight: 500;
-  transition: background 0.3s, color 0.3s, transform 0.2s;
+  transition:  background 0.3s, color 0.3s, transform 0.2s;
 }
 
 /* Efecto hover */
@@ -89,7 +94,7 @@ nav a:hover {
 
 /* Cuando se hace clic o se mantiene presionado */
 nav a:active {
-  background: var(--amarillo);
+  background: var(--celeste);
   color: var(--text);
   transform: scale(0.97);
 }
@@ -180,6 +185,7 @@ nav a.active {
 =================================== */
 .skill {
   background: var(--muted);
+  color: var(--text);
   padding: 6px 12px;
   border-radius: 999px;
   margin: 4px;
@@ -374,7 +380,7 @@ nav a.active {
 }
 
 .talleres-list {
-    list-style-type: disc; /* o circle, square según prefieras */
+    list-style-type: disc; 
     padding-left: 30px;
 }
 
