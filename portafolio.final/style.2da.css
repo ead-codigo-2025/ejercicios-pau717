@@ -77,7 +77,7 @@ header {
    NAVEGACIÓN
 =================================== */
 nav a {
-  background: var(--celeste);
+  background: var(--muted);
   text-decoration: none;
   color: var(--text);
   padding: 8px 14px;
@@ -94,8 +94,8 @@ nav a:hover {
 
 /* Cuando se hace clic o se mantiene presionado */
 nav a:active {
-  background: var(--celeste);
-  color: var(--text);
+  background: var(--fucsia);
+  color: var(--muted);
   transform: scale(0.97);
 }
 
@@ -195,7 +195,7 @@ nav a.active {
 }
 
 .skill:hover {
-  background: var(--celeste);
+  background: var(--morado);
   color: white;
 }
 
