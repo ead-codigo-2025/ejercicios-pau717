@@ -3,42 +3,70 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sobre mí – Paula Retamal</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Sobre mí | Portafolio Paula Retamal</title>
+  <link rel="stylesheet" href="style.2da.css">
 </head>
 <body>
-  <header>
-    <nav class="menu">
-      <h1 class="logo">pauLA</h1>
-      <ul id="nav-links">
-        <li><a href="portafolio.retamal.html">Inicio</a></li>
-        <li><a href="sobremi.html" class="active">Sobre mí</a></li>
-        <li><a href="proyecto1.html">Proyectos</a></li>
-        <li><a href="proyecto2.html">Contacto</a></li>
-      </ul>
-      <div class="menu-toggle" id="menu-toggle">☰</div>
+
+  <!-- HEADER -->
+  <header class="container">
+    <div class="logo">pauLA</div>
+    <nav>
+      <a href="inicio2.html" class="nav-link">Inicio</a>
+      <a href="sobremi.html" class="nav-link active">Sobre mí</a>
+      <a href="proyectos.html" class="nav-link">Proyectos</a>
+      <a href="hobbys.html"  class="nav-link">Hobbys</a>
+      <a href="contacto.html" class="nav-link">Contacto</a>
     </nav>
   </header>
 
-  <section class="contenido fade-in">
-    <h2>Sobre mí</h2>
-    <p>
-      Soy Paula Retamal, diseñadora con una mirada educativa y sensorial sobre los objetos, los espacios y el aprendizaje.  
-      En mi práctica busco que el diseño dialogue con la pedagogía, el arte y la experiencia.  
-      Trabajo creando talleres, materiales didácticos y objetos que promuevan la exploración, la colaboración y la curiosidad.
-    </p>
-
-    <p>
-      En proyectos como <strong>Jardín de Colors</strong> o <strong>Texturas Sonoras</strong>,  
-      he explorado la relación entre materia, cuerpo y conocimiento.  
-      Mi interés está en cómo el diseño puede construir puentes entre lo sensible y lo conceptual.
-    </p>
+  <!-- HERO SOBRE MÍ -->
+  <section class="hero container">
+    <div class="hero-card" style="animation: fadeInUp 0.6s ease;">
+      <h1>Sobre mí</h1>
+      <p class="texto">
+        Soy diseñadora con una visión que va más allá de lo estético, 
+        enfocada en crear experiencias significativas que conecten a las personas 
+        con el entorno, los objetos y las ideas. Mi trabajo combina rigor conceptual, 
+        investigación y experimentación, integrando herramientas de diseño, tecnología 
+        y metodologías educativas.
+      </p>
+      <p class="texto">
+        Me interesa especialmente explorar la dimensión lúdica del diseño, 
+        entendida no solo como juego, sino como una forma de aprendizaje, 
+        descubrimiento y conexión emocional. Cada proyecto que desarrollo busca 
+        transformar la manera en que las personas interactúan con los espacios, 
+        los objetos o la información, generando experiencias que sean atractivas, 
+        accesibles y memorables.
+      </p>
+      <p class="texto">
+        A lo largo de mi carrera, he trabajado en proyectos interdisciplinarios
+        que combinan diseño de interacción, educación, arte y tecnología, siempre con 
+        un enfoque centrado en el usuario y en la creatividad como motor de innovación. 
+        Me motiva desarrollar soluciones que despierten curiosidad, fomenten la exploración 
+        y abran nuevas formas de percibir y experimentar el mundo que nos rodea.
+      </p>
+    </div>
+    <img src="imagenes/sobre-mi.jpg" alt="Paula Retamal" class="fade-in" style="border-radius: 16px;">
   </section>
 
-  <footer>
-    <p>© 2025 Paula Retamal – Portafolio diseñado desde el código.</p>
-  </footer>
+  <!-- POSIBLES EXTENSIONES -->
+  <!-- Aquí podrías agregar secciones opcionales: -->
+  <!-- 1. Habilidades: usando "skill" de tu CSS -->
+  <section class="container" style="animation: fadeIn 0.8s ease;">
+    <h2>Habilidades</h2>
+    <div>
+      <span class="skill">Diseño de interacción</span>
+      <span class="skill">Diseño gráfico</span>
+      <span class="skill">Diseño de objetos</span>
+      <span class="skill">Investigación y análisis</span>
+      <span class="skill">Prototipado y UX</span>
+      <span class="skill">Educación y metodologías lúdicas</span>
+    </div>
+  </section>
 
-  <script src="script.js"></script>
+  <!-- 2. Foto de estudio / retrato adicional -->
+  <!-- 3. Frase personal o visión resumida destacada en un hero-card más pequeño -->
+
 </body>
 </html>
